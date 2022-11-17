@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js.js"></script>
+    <title>Gabriel Vidal</title>
+</head>
+<body>
+    <header>
+        <nav class="main-header">
+            <ul>
+                <li><img src="" alt=""></li>
+                <li id="GV">&lt;/GV&gt;</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="intro-contato">
+        <h1>CONTATO</h1>
+    </div>
+    <form action="https://formsubmit.co/gbastosvidal@gmail.com" method="post">
+        <section class="contato">
+            <div class="nome-contato">
+                <input type="text" class="ipt-nome" id="nome" required>
+                <label for="ipt-nome">Nome</label>
+            </div>
+            <div class="sobrenome">  
+                <input type="text" class="ipt-sobrenome" id="sobrenome" required>
+                <label for="ipt-sobrenome">Sobrenome</label>
+            </div> 
+            <div class="email">
+                <input type="email" class="ipt-email" id="email" required>
+                <label for="ipt-email">E-mail</label>
+            </div>
+
+            <div class="cidade">
+                <input type="text" class="ipt-cidade" id="cidade" required>
+                <label for="ipt-cidade">Cidade</label>
+            </div>
+            <div class="estado">    
+                <label>Estado</label>
+                <select name="" class="ipt-estado" id="estado" required>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </div>
+            <div class="text-box">
+                <textarea name="text-area" id="text" cols="70" rows="12" class="text-area" type="message"></textarea>
+                <label for="text-area">Menssagem</label>
+            </div>
+            <button type="submit" onclick="apagarTexto()" class="enviar" id="enviar">Enviar</button>
+            
+        </section>
+    </form>
+</body>
+</html>

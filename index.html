@@ -1,0 +1,73 @@
+<!-- Aluno: Gabriel Bastos Vidal - 202212035
+Eng. Software - 2º período -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Gabriel Vidal</title>
+</head>
+<body>
+    <!-- header do site -->
+    <header>
+        <nav class="main-header">
+            <ul>
+                <li><img src="" alt=""></li>
+                <li id="GV">&lt;/GV&gt;</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- apresentação inicial -->
+    <section class="principal" id="home">
+        <div class="main-left">
+            <h1>Olá, eu sou</h1>
+            <p class="nome">Gabriel Vidal</p>
+            <h1>Futuro Engenheiro de Software</h1>
+        </div>
+        <div class="main-right">
+            <img src="imagens/imagem.png" alt="">
+        </div>
+    </section>
+    <!-- sessão do sobre -->
+    <section class="sobre" id="sobre">
+        <!-- <h1 class="h1-section">SOBRE</h1> -->
+        <div class="main-sobre">
+            <img src="imagens/sobre_img2.jpg" alt="">
+        </div>
+        <div class="sobre-right">
+            <h1 class="ola">SOBRE MIM</h1>
+            <p class="text-sobre">Olá, me chamo Gabriel Bastos Vidal, tenho 21 anos e estou cursando o 2º período de Engenharia de Software na Universsidade de Vassouras. </p>
+            <p id="vermais">
+                <!-- JS para opção de ver mais -->
+                <span onclick="document.getElementById('vermais').innerHTML='Comecei a me interessar pela programação no ano de 2020 e no momento estou cursando Engenharia de Software e sigo com muita<br>dedicação nos estudos para futuramente me tornar um desenvolvedor fullstack.<br>Futuramente vou atualizar o site com projetos!'" class="botao-sobre">
+                    Ver mais...
+                </span>
+            </p>
+        </div>
+    </section>
+    <!-- contato -->
+    <section class="contato_index" id="contato">
+        <h1>CONTATO</h1>
+        <div class="main-contato">
+            <p id="text-imgs">Me encontre em</p>
+            <a href="https://github.com/Gabriel-Vidal" target="_blank"><img src="imagens/25231.png" alt="" id="github"></a>
+            <a href="https://www.linkedin.com/in/gabriel-vidal-34a996218/" target="_blank"><img src="imagens/linkedin.png" alt="" id="linkedin"></a>
+            <a href="mailto:gbastosvidal@gmail.com"><img src="imagens/Gmail_Icon.png" alt="" id="gmail"></a>
+        </div>
+        <div class="enviar-msg">
+            <p>Me envie uma menssagem</p>
+            <a href="contato.html" id="bt-msg">Vamos conversar?</a>
+        </div>
+    </section>
+    <!-- rodapé -->
+    <footer class="footer">
+        <p>&copy; 2022 Gabriel Bastos Vidal</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,559 @@
+/* animações */
+@keyframes animacao{
+    from{border-right-color:rgb(255, 255, 255, .75) ;}
+    to{border-right-color: rgb(19, 19, 19)}
+}
+
+@keyframes aa{
+    from{width: 0;}
+    to {width: 8.7em;}
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(128, 0, 0);
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+/* header */
+header {
+    background-color: #151515;
+    border-bottom: 2px solid rgb(39, 39, 39);
+}
+
+.main-header {
+    width: 100%;
+    height: 80px;
+}
+
+.main-header ul {
+    list-style: none;
+    padding: 0px 220px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+}
+
+#GV {
+    color:  rgb(128, 0, 0);
+    position: relative;
+    right: 48%;
+    font-size: 1.3rem;
+    font: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.main-header li {
+    padding: 0px 70px;
+    font: normal 13pt Arial;
+    font: "Poppins", sans-serif;
+}
+
+.main-header li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    color: rgb(255, 255, 255, .85);
+}
+
+.main-header li a::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(128, 0, 0);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.25s ease-in-out;
+}
+
+.main-header li a:hover::after{
+    width: 100%;
+}
+/* apresentação */
+.principal {
+    padding: 6.5%;
+    display: flex;
+}
+
+.main-left{
+    color: rgb(128, 0, 0);
+    width: 50%;
+    margin: 5rem 0;
+}
+
+
+.main-left h1{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255, .75);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    position: relative;
+    left: 70px;
+}
+
+.nome {
+    font-size: 2.5rem;
+    border-right: 2px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animacao 800ms steps(20) infinite normal, aa 2s steps(20) 1s normal both;
+    letter-spacing: 2px;
+    position: relative;
+    left: 70px;
+}
+
+.main-right {
+    width: 50%;
+}
+
+.main-right img {
+    position: relative;
+    left: 100px;
+
+}
+
+/* sobre */
+.sobre {
+    padding: 5.5%;
+    background-color: #151515;
+    display: flex;
+}
+
+.h1-section {
+    font-size: 2.2rem;
+    color: rgba(128, 0, 0);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+}
+
+
+.main-sobre {
+    display: flex;
+    width: 30%;
+}
+
+
+.main-sobre img {
+    position: relative;
+    border-left: 6px solid rgb(128, 0, 0);
+    top: 1rem;
+    left: 100px;
+}
+
+.text-sobre {
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    font-size: 1.1rem;
+    color: rgba(206, 206, 206, 0.75);
+    margin: 1.5rem 0;
+    position: relative;
+    top: 50px;
+}
+
+
+.ola {
+    color: rgb(255, 255, 255, .75);
+    font-size: 2rem;
+    font-weight: 200;
+    width: 30%;
+    position: relative;
+    left: 63px;
+    top: 40px;
+    
+}
+
+#vermais{
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    font-size: 1.1rem;
+    color: rgba(206, 206, 206, 0.75);
+    margin: 1.5rem 0;
+    position: relative;
+    top: 50px;
+}
+
+
+.botao-sobre {
+    border-bottom: none;
+    cursor: pointer;
+    color: rgb(128, 0, 0);
+}
+
+
+/* contato */
+
+
+.contato_index{
+    background-color: #151515;
+    padding: 5.5%;
+    display: flex;
+    border-top: 2px solid rgb(39, 39, 39);
+}
+
+.contato_index h1 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255, .75);
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    left: 45%;
+    bottom: 40px;
+}
+
+.main-contato {
+    width: 50%;
+}
+
+#text-imgs{
+    position: relative;
+    left: 38%;
+    top: 5%;
+    font-size: 0.9rem;
+    color: rgba(206, 206, 206, 0.75);
+}
+
+#github {
+    width: 8.5%;
+    position: relative;
+    top: 50%;
+    border-radius: 100%;
+    transition: 1s;
+    left: 30%;
+    transition: 0.5s ease-in-out;
+}
+
+#github:hover {
+    transform: scale(1.1);
+}
+
+#linkedin {
+    width: 8%;
+    position: relative;
+    top: 47%;
+    left: 31%;
+    transition: 0.5s ease-in-out;
+}
+
+#linkedin:hover {
+    transform: scale(1.1);
+}
+
+#gmail{
+    width: 8%;
+    position: relative;
+    top: 45%;
+    left: 32%;
+    transition: 0.5s ease-in-out;
+}
+
+#gmail:hover{
+    transform: scale(1.1);
+}
+
+.enviar-msg {
+    width: 50%;
+}
+
+.enviar-msg p {
+    color: rgba(206, 206, 206, 0.75);
+    position: relative;
+    top: 5%;
+    left: 20%;
+    width: 50%;
+    font-size: 0.9rem;
+}
+
+#bt-msg {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(128, 0, 0);
+    position: relative;
+    left: 20%;
+    top: 55%;
+}
+
+/* rodapé */
+.footer {
+    background-color: #151515;
+    text-align: center;
+    color: rgba(119, 119, 119, 0.75);
+}
+
+/* contato.html */
+
+.contato {
+    margin-top: 8%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(128, 0, 0);
+    background-color: rgb(39, 39, 39);
+}
+
+.intro-contato {
+    margin-top: 30px;
+    margin-bottom: -5%;
+    color: rgb(209, 209, 209);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255, .75);
+}
+
+/* nome */
+.nome1 {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.nome-contato {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.nome-contato label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: all, 0.2s ease-in-out;
+}
+
+.ipt-nome {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color:  rgb(39, 39, 39);
+    color: rgb(209, 209, 209);
+    outline: 0;
+}
+
+.ipt-nome:focus,
+.ipt-nome:valid {
+    border-bottom: 2px solid rgb(128, 0, 0, 0.35);
+}
+
+.ipt-nome:focus ~ label,
+.ipt-nome:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: rgb(128, 0, 0);
+}
+
+/* sobrenome */
+.sobrenome {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sobrenome label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: all, 0.2s ease-in-out;
+}
+
+.ipt-sobrenome {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color:  rgb(39, 39, 39);
+    color: rgb(209, 209, 209);
+    outline: 0;
+}
+
+.ipt-sobrenome:focus,
+.ipt-sobrenome:valid {
+    border-bottom: 2px solid rgb(128, 0, 0, 0.35);
+}
+
+.ipt-sobrenome:focus ~ label,
+.ipt-sobrenome:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: rgb(128, 0, 0);
+}
+
+/* email */
+.email {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.email label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: all, 0.2s ease-in-out;
+}
+
+.ipt-email {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color:  rgb(39, 39, 39);
+    color: rgb(209, 209, 209);
+    outline: 0;
+}
+
+.ipt-email:focus,
+.ipt-email:valid {
+    border-bottom: 2px solid rgb(128, 0, 0, 0.35);
+}
+
+.ipt-email:focus ~ label,
+.ipt-email:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: rgb(128, 0, 0);
+}
+
+/* cidade */
+
+.cidade {
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.cidade label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: all, 0.2s ease-in-out;
+}
+
+.ipt-cidade {
+    width: 80%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    background-color:  rgb(39, 39, 39);
+    color: rgb(209, 209, 209);
+    outline: 0;
+}
+
+.ipt-cidade:focus,
+.ipt-cidade:valid {
+    border-bottom: 2px solid rgb(128, 0, 0, 0.35);
+}
+
+.ipt-cidade:focus ~ label,
+.ipt-cidade:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: rgb(128, 0, 0);
+}
+
+/* estado */
+
+.estado {
+    width: 15%;
+    position: relative;
+    left: 85%;
+    bottom: 55px;
+    color: rgb(150, 150, 150);
+}
+
+.ipt-estado {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: rgb(209, 209, 209);
+    width: 100%;
+}
+
+/* text-area */
+
+.text-box {
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.text-box label{
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: all, 0.2s ease-in-out;
+}
+
+.text-area {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(78, 78, 78);
+    background-color:  rgb(39, 39, 39);
+    color: rgb(209, 209, 209);
+    outline: 0;
+}
+
+.botao {
+    position: relative;
+    left: 46%;
+    width: 10%;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+
+    border-radius: 5px;
+    background-color: rgb(128, 0, 0);
+    cursor: pointer;
+
+}
+
+.enviar {
+    position: relative;
+    left: 45%;
+    width: 10%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(128, 0, 0);
+    cursor: pointer;
+    color: rgb(209, 209, 209);
+    border: none;
+}
+
+.enviar:hover {
+    transition: all 0.5s ease-in-out;
+    scale: 1.1;
+    color: black;
+}
+
